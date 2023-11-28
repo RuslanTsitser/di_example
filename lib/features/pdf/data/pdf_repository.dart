@@ -1,5 +1,5 @@
-import 'package:pdf_editor/core/services/pdf_reader_service/pdf_reader_service.dart';
-import 'package:pdf_editor/features/pdf/domain/pdf_repository.dart';
+import 'package:di_example/core/services/pdf_reader_service/pdf_reader_service.dart';
+import 'package:di_example/features/pdf/domain/pdf_repository.dart';
 
 class PdfRepositoryImpl implements PdfRepository {
   final PdfReaderService pdfReaderService;

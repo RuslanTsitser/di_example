@@ -3,10 +3,10 @@ import 'package:di_example/features/rick_and_morty/domain/repository.dart';
 import 'package:di_example/features/rick_and_morty/service/characters_api/characters_api_client.dart';
 import 'package:dio/dio.dart';
 
-class RickAndMortyApiServiceImpl implements RickAndMortyRepository {
+class RickAndMortyRepositoryImpl implements RickAndMortyRepository {
   final CharactersApiClient _charactersApiClient;
 
-  RickAndMortyApiServiceImpl({required Dio dio}) : _charactersApiClient = CharactersApiClient(dio);
+  RickAndMortyRepositoryImpl({required Dio dio}) : _charactersApiClient = CharactersApiClient(dio);
 
   @override
   Future<List<CharacterModel>> getCharacters({

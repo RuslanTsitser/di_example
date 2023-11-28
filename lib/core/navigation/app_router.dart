@@ -8,5 +8,14 @@ class AppRouter extends $AppRouter {
   RouteType get defaultRouteType => const RouteType.material();
 
   @override
-  List<AutoRoute> get routes => <AutoRoute>[];
+  List<AutoRoute> get routes => <AutoRoute>[
+        AutoRoute(
+          path: '/',
+          page: SplashRoute.page,
+        ),
+        AutoRoute(
+          path: '/rick-and-morty',
+          page: RickAndMortyRoute.page,
+        ),
+      ];
 }
